@@ -18,7 +18,7 @@ const createAuthor = async (req, res) => {
     if (checkAuthor)
       return res.status(403).json({ message: "Author already exist" });
     const author = await Author.create({ name });
-    res.status(200).json(author);
+    res.status(200).json({ message: "Author created successfully", author});
   } catch (err) {
     res.status(500).json({ error: err.message });
   }

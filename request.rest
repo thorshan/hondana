@@ -1,23 +1,23 @@
-GET http://localhost:5000/api/authors
+GET http://localhost:5000/api/genres
 
 ###
-POST http://localhost:5000/api/authors
+POST http://localhost:5000/api/genres
 Content-Type: application/json
 
 {
-    "name" : "Test2"
+    "name" : "Test23"
 }
 
 ###
-GET http://localhost:5000/api/authors/68c93785a583ec13f99155b0
+GET http://localhost:5000/api/genres/68c96df5afa39d4856b03823
 
 ###
-PUT http://localhost:5000/api/authors/68c9379ca583ec13f99155b3
+PUT http://localhost:5000/api/genres/68c96df5afa39d4856b03823
 Content-Type: application/json
 
 {
-    "name" : "Test3"
+    "name" : "Test1"
 }
 
 ###
-DELETE http://localhost:5000/api/authors/68c936e5a583ec13f99155ab
+DELETE http://localhost:5000/api/genres/68c969c4214f88ef83896d52
