@@ -1,23 +1,26 @@
-GET http://localhost:5000/api/genres
+GET http://localhost:5000/api/users
 
 ###
-POST http://localhost:5000/api/genres
+POST http://localhost:5000/api/users
 Content-Type: application/json
 
 {
-    "name" : "Test23"
+    "name" : "TestAvator",
+    "email" : "testavator@gmail.com",
+    "password" : "123456"
 }
 
 ###
-GET http://localhost:5000/api/genres/68c96df5afa39d4856b03823
+GET http://localhost:5000/api/users/68c79f17c8d9fb42abdadfa5
 
 ###
-PUT http://localhost:5000/api/genres/68c96df5afa39d4856b03823
+PUT http://localhost:5000/api/users/68ca51b78aa99fdcbc019ef1
 Content-Type: application/json
 
 {
-    "name" : "Test1"
+    "name" : "TestAvaUpdate",
+    "password" : "111111"
 }
 
 ###
-DELETE http://localhost:5000/api/genres/68c969c4214f88ef83896d52
+DELETE http://localhost:5000/api/users/68c79f17c8d9fb42abdadfa5

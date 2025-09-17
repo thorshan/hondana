@@ -22,11 +22,17 @@ connectDb();
 // Routers Configurations
 const authorRoute = require('./routes/authorRoutes');
 const genreRoute = require('./routes/genresRoutes');
+const categoryRoute = require('./routes/categoryRoutes');
+const userRoute = require('./routes/userRoutes');
 
 // Author route
 app.use('/api', authorRoute);
 // Genre route
 app.use('/api', genreRoute);
+// Category route
+app.use('/api', categoryRoute);
+// User route
+app.use('/api', userRoute);
 
 
 const PORT = process.env.PORT || 3000;
