@@ -20,15 +20,15 @@ app.use(cors());
 app.use(express.urlencoded({ extended : true }));
 
 // Database connection
-const connectDb = require('./config/database');
+const connectDb = require('../config/database');
 connectDb();
 
 // Routers Configurations
-const authorRoute = require('./routes/authorRoutes');
-const genreRoute = require('./routes/genresRoutes');
-const categoryRoute = require('./routes/categoryRoutes');
-const userRoute = require('./routes/userRoutes');
-const authRoute = require('./routes/authRoutes');
+const authorRoute = require('../routes/authorRoutes');
+const genreRoute = require('../routes/genresRoutes');
+const categoryRoute = require('../routes/categoryRoutes');
+const userRoute = require('../routes/userRoutes');
+const authRoute = require('../routes/authRoutes');
 
 // Author route
 app.use('/api', authorRoute);
