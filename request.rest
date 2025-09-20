@@ -1,29 +1,39 @@
+GET http://localhost:5000/api/books
+
+###
 GET http://localhost:5000/api/users
+###
+GET http://localhost:5000/api/authors
+###
+GET http://localhost:5000/api/categories
+###
+GET http://localhost:5000/api/genres
 
 ###
-POST http://localhost:5000/api/users
+POST http://localhost:5000/api/books
 Content-Type: application/json
 
 {
-    "name" : "TestAvator",
-    "email" : "testavator@gmail.com",
-    "password" : "123456"
+    "name" : "Test6",
+    "author" : "68c9642b8c990d87765e1614",
+    "category" : "68ca3031f4f8a8eca58dbdda",
+    "genres" : "68c972b3555ee42c59e38d2b",
+    "description" : "Test"
 }
 
 ###
-GET http://localhost:5000/api/users/68c79f17c8d9fb42abdadfa5
+GET http://localhost:5000/api/books/68cd0fd86ff1b81d27b70a24
 
 ###
-PUT http://localhost:5000/api/users/68ca51b78aa99fdcbc019ef1
+PUT http://localhost:5000/api/books/68cd0fd86ff1b81d27b70a24
 Content-Type: application/json
 
 {
-    "name" : "TestAvaUpdate",
-    "password" : "111111"
+    "name" : "Test3"
 }
 
 ###
-DELETE http://localhost:5000/api/users/68c79f17c8d9fb42abdadfa5
+DELETE http://localhost:5000/api/books/68cd13f7e4cd2f1ea66cbf03
 
 ###
 POST http://localhost:5000/api/auth

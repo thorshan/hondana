@@ -7,7 +7,7 @@ const path = require('path');
 
 const app = express();
 app.use(express.json());
-app.use('/public', express.static(path.join(__dirname, 'public')));   
+app.use('/public', express.static(path.join(__dirname, 'public')));  
 
 // API calls
 const cors = require('cors');
@@ -26,6 +26,7 @@ const genreRoute = require('./routes/genresRoutes');
 const categoryRoute = require('./routes/categoryRoutes');
 const userRoute = require('./routes/userRoutes');
 const authRoute = require('./routes/authRoutes');
+const bookRoute = require('./routes/bookRoutes');
 
 // Author route
 app.use('/api', authorRoute);
@@ -37,6 +38,8 @@ app.use('/api', categoryRoute);
 app.use('/api', userRoute);
 // Authentication route
 app.use('/api', authRoute);
+// Book route
+app.use('/api', bookRoute);
 
 
 const PORT = process.env.PORT || 3000;
